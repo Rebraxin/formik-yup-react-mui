@@ -46,27 +46,11 @@ export const customStyle = {
       transformOrigin: 'right',
       transition: 'transform 250ms ease-in',
     },
-    '&::before': {
-      content: "''",
-      position: 'absolute',
-      top: '-3px',
-      left: 0,
-      width: '100%',
-      height: '2px',
-      backgroundColor: 'red',
-      transform: 'scaleX(0)',
-      transformOrigin: 'left',
-      transition: 'transform 250ms ease-in',
-    }, 
     '&:hover': {
       textDecoration: 'none',
       '&::after': {
         transform: 'scaleX(1)',
         transformOrigin: 'left',
-      },
-      '&::before': {
-        transform: 'scaleX(1)',
-        transformOrigin: 'right',
       },
     },   
   },
